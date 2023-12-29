@@ -1,0 +1,20 @@
+.Navlist {
+  text-decoration: none;
+  background: rgb(2, 114, 252);
+}
+
+.NavItem {
+  color: white;
+  background: purple;
+  margin: 10px;
+  font-weight: 700; 
+  list-style: none;
+  padding: 5px;
+  transition: all 0.3s;
+}
+
+.NavItem:hover {
+  background: rgb(127, 127, 234);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: oblique;
+}
