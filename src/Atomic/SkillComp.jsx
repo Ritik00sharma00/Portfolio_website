@@ -2,14 +2,19 @@ import { Container } from '@mui/material'
 import React from 'react'
 import TextContainer from './TextContainer'
 
-const SkillComp = ({heading,skill}) => {
+const SkillComp = ({heading,skill,bg="black"}) => {
    
   return (
+
+
     <>
-    <Container style={{background:"black",display:"inline-block",padding:"10vw",
-    maxWidth:"100%",textAlign:"left",borderRadius:"400PX",margin:"1vh 1vw 1vh 0vw "}}>
-        <h2 style={{color:"purple",fontFamily:"fantasy",marginLeft:"10vw"}}>{heading}</h2>
-         {skill.map((element,index)=>{return (<div style={{margin:"1vw 15vw 1vw 10vw"}}><TextContainer detail={element}/></div>)})}
+
+       
+
+    <Container style={{background:"linear-gradient(to right, cyan,black)",display:"inline-block",
+    maxWidth:"100vw",borderRadius:"400PX",padding:"2vw"}}>
+        <h2 style={{color:"red",marginLeft:"5vw"}}>{heading}</h2>
+         {skill.map((element,index)=>{return (<div style={{textAlign:"center"}}><TextContainer key={index} detail={element}/></div>)})}
        
        
     </Container>
@@ -17,4 +22,11 @@ const SkillComp = ({heading,skill}) => {
   )
 }
 
+SkillComp.bg=
+{
+  bg:"black"
+}
+
+
 export default SkillComp
+

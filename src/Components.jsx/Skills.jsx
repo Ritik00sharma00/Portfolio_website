@@ -1,52 +1,29 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 import SkillComp from '../Atomic/SkillComp'
 
 
 const Java=
 [
-  "1.Know the basic concepts of Java",
-  "2.Good grip on OOPs concepts",
-  "3.Capability to proficiently use Collection framework for program implementation.",
-  "4. Competence in writing programs with robust Exception Handling",
-  "5. Know how to connect Java with MySql database through  JDBC.",
-  "6.Have a great idea of Advanced Java concepts-"
-
+  "1.Core Java And OOPs",
+  "2.JDBC API",
+  "3.Spring core",
+  "4.Spring Hibernate",
+  "5.Spring boot",
+  "6.ApIs"
 ]
 
 const ReactJs=
 [
-  "1.Know the concept of Virtual Dom.",
-  "2.Well known to functional component",
-  "3.Skilled in JSX syntax, enabling seamless integration of HTML-like code within JavaScript",
-  "4.Good idea of Props",
-  "5.Can build atomic components and reuse them.",
-  "6.Can Fetch api using  Axios",
-  "7.Awareness of tools like React Router for handling navigation within single-page   applications.",
-  "8.Use of Material Ui, React Bootstrap and Tailwind Css with react.",
-  "9.Handling routes through React Router dom"
+  "As an intermediate in react.Can create good looking componenets with dynamic inputs. "
 
 ]
 
 const JS=
 [
-  "1. Good knowledge of Keyword ,operators and datatypes.",
-  "2. Know the different types of Functions ",
-  "3. Practice with Events and event listeners",
-  "4. Knowledgeable about BOM functionalities, particularly popups and timing",
-  "5. Proficient in manipulating the Document Object Model (DOM) to dynamically change webpage content and structure.",
-  "6. Known to Arrays and Strings",
-  "7. Aware of the Hoisting Concept"
+  "Know the deeep dive features of JS how it works, the web flow and programming logic."
 ]
 
-const Html=
-[
-  "1.Proficient in creating the structure of web pages using HTML5 tags .",
-  "2.Experience in building forms using <form> tags and various input types for gathering user data.",
-  "3.Ability to embed multimedia elements like images, videos, and audio using appropriate HTML tags.",
-  "4.Proficiency in using CSS for styling HTML elements, including fonts, colors, backgrounds, and layout design using flexbox or grid.",
-  "5.Familiarity with the box model concept, including padding, margin, border properties, and their impact on element layout and spacing."
-
-]
 
 const Mysql=
 [
@@ -55,14 +32,36 @@ const Mysql=
   "3.Good grip on Joins",
   "4.Known to Normalization"
 ]
+
+const styling=
+[
+  " I can use these tools for styling any webpage",
+  "HTML and Css","Material UI", "Bootstrap","Tailwind CSS"
+
+]
+
 const Skills = () => {
   return (
     <>
-    <SkillComp heading={"Java"} skill={Java}/>
-    <SkillComp heading={"React Js"} skill={ReactJs}/>
-    <SkillComp heading={"Javascript"} skill={JS}/>
-    <SkillComp heading={"Html & CSS"} skill={Html}/>
-    <SkillComp heading={"MySql"} skill={Mysql}/>
+
+<Container style={{
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fill, minmax(40%, 1fr))",
+  gap: "50px",
+  maxWidth: "70%",
+  borderRadius: "20px",
+  padding: "1vw",
+  
+}}>
+  <SkillComp heading={"Java"} skill={Java} />
+  <SkillComp heading={"React Js"} skill={ReactJs} />
+  <SkillComp heading={"Javascript"} skill={JS} />
+  <SkillComp heading={"Styling"} skill={styling} />
+  <SkillComp heading={"MySql"} skill={Mysql} />
+</Container>
+
+
+
 
     </>
   )
