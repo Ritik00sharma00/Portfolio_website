@@ -18,9 +18,6 @@ const Projects = () => {
     about={"This is a photo editor in which the user can upload the photo and apply filters on it as well as the border color and the border size and then can download the photo"}/>
     </>
 
-      <ProjectComp name={"Node JS Rest API Employee management api task for api"} sty={"lightyellow"} link={"https://github.com/Ritik00sharma00/Api-Project/tree/master"}duration={"5days"} tech={"Node Js,Express Js, Mongo db"} 
-    about={"This is the api made from Node Js,Express Js,Mongo db, which shows employee task management Api."}/>
-    </>
    
   )
 }
