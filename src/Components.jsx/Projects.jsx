@@ -16,10 +16,13 @@ const Projects = () => {
    
     <ProjectComp name={"Webby photo editor"} sty={"lightyellow"} link={"https://webbyphotoeditor.netlify.app"}duration={"3days"} tech={"Html,css,Boottsrap"} 
     about={"This is a photo editor in which the user can upload the photo and apply filters on it as well as the border color and the border size and then can download the photo"}/>
-    </>
+      
+    <ProjectComp name={"Api for employee task management"} sty={"lightyellow"} link={"https://github.com/Ritik00sharma00/Api-Project/tree/master"}duration={"5days"} tech={"Node JS,Express Js, Mongo db"} 
+    about={"Mvc folder strcuture is maintained.From this api users can fetch the task name,task name,task id, description etc.and can do crud operations "}/>
+  
 
-   
-  )
+    </>
+     )
 }
 
 export default Projects
